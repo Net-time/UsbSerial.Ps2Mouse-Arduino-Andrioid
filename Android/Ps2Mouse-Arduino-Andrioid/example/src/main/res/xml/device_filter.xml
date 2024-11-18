@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- in hex: vendor id = 0b05 and product id = 17cb -->
+    <!-- Az-Delivery Android UNO below -->
+    <usb-device vendor-id="6790" product-id="29987" />
+</resources>
