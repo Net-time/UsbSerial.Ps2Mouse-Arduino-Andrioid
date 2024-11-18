@@ -1,9 +1,11 @@
 UsbSerial [![Build Status](https://travis-ci.org/felHR85/UsbSerial.svg?branch=master)](https://travis-ci.org/felHR85/UsbSerial) [![](https://jitpack.io/v/felHR85/UsbSerial.svg)](https://jitpack.io/#felHR85/UsbSerial) [![AndroidArsenal](https://img.shields.io/badge/Android%20Arsenal-UsbSerial-green.svg?style=true)](https://android-arsenal.com/details/1/4162) [![Join the chat at https://gitter.im/UsbSerial/Lobby](https://badges.gitter.im/UsbSerial/Lobby.svg)](https://gitter.im/UsbSerial/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
 =========
 
+
 UsbSerial Android application exampel fork only, library files not to be updated.  
 Purpose of repositary is to get a range of input options to an Android application.  
 Why? , Android devices can only communicate wit USB-devices that exists in the kernals drivers.<br/>
+![PoC](https://github.com/user-attachments/assets/78d562d1-ef63-478e-9894-040c76ab1597)
 However Android devices do accept some USB to serial adaptors, I use a AzDelivery Arduino UNO as adapter.<br/>
 Whith this I get full access to the Arduino GPIO and the mechanical PS/2 mouse connected to it.<br/>
 Why a PS/2 mouse? It has 3 directional sensors that can easily be connected to some rotating mechanical thing.<br/>
