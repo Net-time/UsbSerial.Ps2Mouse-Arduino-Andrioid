@@ -1,32 +1,35 @@
-UsbSerial [![Build Status](https://travis-ci.org/felHR85/UsbSerial.svg?branch=master)](https://travis-ci.org/felHR85/UsbSerial) [![](https://jitpack.io/v/felHR85/UsbSerial.svg)](https://jitpack.io/#felHR85/UsbSerial) [![AndroidArsenal](https://img.shields.io/badge/Android%20Arsenal-UsbSerial-green.svg?style=true)](https://android-arsenal.com/details/1/4162) [![Join the chat at https://gitter.im/UsbSerial/Lobby](https://badges.gitter.im/UsbSerial/Lobby.svg)](https://gitter.im/UsbSerial/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
+Ps/2Mouse<->Arduino<->Android [![Build Status](https://travis-ci.org/felHR85/UsbSerial.svg?branch=master)](https://travis-ci.org/felHR85/UsbSerial) [![](https://jitpack.io/v/felHR85/UsbSerial.svg)](https://jitpack.io/#felHR85/UsbSerial) [![AndroidArsenal](https://img.shields.io/badge/Android%20Arsenal-UsbSerial-green.svg?style=true)](https://android-arsenal.com/details/1/4162) [![Join the chat at https://gitter.im/UsbSerial/Lobby](https://badges.gitter.im/UsbSerial/Lobby.svg)](https://gitter.im/UsbSerial/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
 =========
 
-UsbSerial Android application exampel fork only, library files not to be updated.
-Purpose of repositary is to get a range of input options to an Android application.
-Why? , Android devices can only communicate wit USB-devices that exists in the kernals drivers.
-However Android devices do except some USB to serial adaptors, I use a AzDelivery Arduino UNO as adapter.
-Whith this I get full access to the Arduino GPIO and the mechanical PS/2 mouse connected to it.
-Why a PS/2 mouse? It has 3 directional sensors that can easily be connected to some rotating mechanical thing.
-Also it has 3 buttons that you can do stuff with.
 
-Modifications to the original example file so far:
-Manifest, added some items to make it remember USB_PERMISSION.
-	forced single instance as Android otherwise starts a new instance when the Arduino is plugged in.
-MainActivity: moved initial focus to the Send-button so that the onscreen keyboard does not hide the Toast-messages.
+UsbSerial Android application exampel fork only, library files not to be updated.  
+Purpose of repositary is to get a range of input options to an Android application.  
+Why? , Android devices can only communicate wit USB-devices that exists in the kernals drivers.<br/>
+![PoC](https://github.com/user-attachments/assets/78d562d1-ef63-478e-9894-040c76ab1597)
+However Android devices do accept some USB to serial adaptors, I use a AzDelivery Arduino UNO as adapter.<br/>
+Whith this I get full access to the Arduino GPIO and the mechanical PS/2 mouse connected to it.<br/>
+Why a PS/2 mouse? It has 3 directional sensors that can easily be connected to some rotating mechanical thing.<br/>
+Also it has 3 buttons that you can do stuff with.<br/>
 
-Current status:
-Android application recives from PS/2:
-left-right
-up-down
-scrolldown-scrollup
-btnLeft, !btnLeft
-btnRight, !btnRight
-btnMiddle, !btnMiddle
+Modifications to the original example file so far:<br/>
+Manifest, added some items to make it remember USB_PERMISSION.<br/>
+	forced single instance as Android otherwise starts a new instance when the Arduino is plugged in.<br/>
+MainActivity: moved initial focus to the Send-button so that the onscreen keyboard does not hide the Toast-messages.<br/>
 
-Arduino accepts commands:
-13on, 13 off (Onboard led on GPIO 13)
+Current status:<br/>
+**Android application recives from PS/2:<br/>**
+left-right<br/>
+up-down<br/>
+scrolldown-scrollup<br/>
+btnLeft, !btnLeft<br/>
+btnRight, !btnRight<br/>
+btnMiddle, !btnMiddle<br/>
 
+**Arduino accepts commands:<br/>**
+13on, 13off (Onboard led on GPIO 13)<br/>
 
+Hardware instructions and original Arduino source at: 
+https://www.instructables.com/Hack-a-Mouse-With-Arduino-2500-Ft-Wireless-PS2/
 
 For information on the library visit the master.
 Text below is cloned from the master and will be edited/deleted
